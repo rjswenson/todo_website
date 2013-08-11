@@ -1,14 +1,25 @@
 <html>
-<head>
-  <link rel="stylesheet" href="todos.css">
-  <script type="text/javascript" src="todos.js"></script>
-</head>
-<body>
-  things left to do:
-  <ul>
-    <li>my first item <a href="#">delete</a></li>
-    <li>my second item <a href="#">delete</a></li>
-  </ul>
+  <head>
+    <link rel="stylesheet" href="todos.css">
+    <script type="text/javascript" src="todos.js"></script>
+    <title> To Do List </title>
+  </head>
   
-</body>
+  <body>
+    <header>
+      <h1>To Do List</h1>
+    </header>
+    
+    
+    <input type="textbox" id="AddBox" placeholder="Whatcha Gotta Do?!"
+      onkeypress="if (event.keyCode == 13) {addList('ToDoListTable'); }"/>
+    <input type="button" id= "AddButton" value="Add Item" onclick="addList('ToDoListTable')" />
+     
+    <div class= "divider"></div>
+    <table id="ToDoListTable"> </table>
+    
+    <footer>
+      Created by <a href="mailto:rjswenson@gmail.com?Subject=Today%20To%20Dos">Robin Swenson-Healey</a>
+    </footer>
+  </body>
 </html>

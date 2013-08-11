@@ -3,22 +3,19 @@
 function addList(myTable) {
 
   var table = document.getElementById(myTable);
+  //inserts at index 0
   var row = table.insertRow(0);
-
   var text = document.getElementById('AddBox').value;
-
   var cell = row.insertCell(0);
-    var element1 = document.createElement("input");
+  
+  
+
+  var element1 = document.createElement("input");
       element1.type = "text";
       element1.style.width ="100%";
       element1.value = text;
+      //magic 'delete' juice below
+      element1.onfocus = function() {table.deleteRow(this.parentNode.parentNode.rowIndex);}
       cell.appendChild(element1);  
 }
 
-//to delete a row by checking a box
-function deleteRow(row)  {
-
-  var row = row.parentNode.parentNode;
-  row.parentNode.removeChild(row);
-
-}

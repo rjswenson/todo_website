@@ -13,4 +13,5 @@ footer {position:fixed; height: 30px; background-color: #beccdb;
 
         left: 0px; bottom: 0px; width: 100%;}
 
-.divider { display: block; height: 10px; padding-bottom: 20px;}
+.divider { display: block; height: 1px; padding-bottom: 20px;}
+

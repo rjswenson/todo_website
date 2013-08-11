@@ -10,14 +10,17 @@
       <h1>To Do List</h1>
     </header>
     
-    
+    <!--Adds textbox which on key 'enter' will send its data to js-->
     <input type="textbox" id="AddBox" placeholder="Whatcha Gotta Do?!"
       onkeypress="if (event.keyCode == 13) {addList('ToDoListTable'); }"/>
+
+    <!--Alternative to 'enter' this button also onclicks to 'addList'-->
     <input type="button" id= "AddButton" value="Add Item" onclick="addList('ToDoListTable')" />
      
     <div class= "divider"></div>
     <table id="ToDoListTable"> </table>
     
+    <!--Send me an email!-->
     <footer>
       Created by <a href="mailto:rjswenson@gmail.com?Subject=Today%20To%20Dos">Robin Swenson-Healey</a>
     </footer>
